@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex003</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #7881d5;
+        margin: 20px;
+    }
+    h1 {
+        color: #ffffff;
+    }
+    p {
+        color: #ffffff;
+    }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Esta é a minha primeira página HTML usando JavaScript!</p>
+
+    <script>
+        var n1 = Number(prompt("Digite um número:")); //`parseInt` converte a string para um número inteiro`
+        var n2 = Number(prompt("Digite outro número:")); //`parseFloat` converte a string para um número de ponto flutuante`
+        var s = n1 + n2;
+        window.alert("A soma dos valores é: " + String(s)); //`String(s)` converte o número `s` para uma string para que possa ser concatenado com a mensagem`
+        //(number + number) = adição
+        //(string + string) = concatenação
+    </script>
+</body>
+</html>

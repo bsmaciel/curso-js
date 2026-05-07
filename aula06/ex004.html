@@ -21,3 +21,19 @@
     </script>
 </body>
 </html>
+
+<!-- Converter números para moeda, usando o Node.js:
+bsmaciel@REIT134461:~/curso-js/aula06$ node
+Welcome to Node.js v20.12.2.
+Type ".help" for more information.
+> var n1 = 1545.5
+undefined
+> n1
+1545.5
+> n1.toFixed(2)
+'1545.50'
+> n1.toFixed(2).replace('.',',')
+'1545,50'
+> n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+'R$ 1.545,50'
+-->

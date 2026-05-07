@@ -23,12 +23,13 @@
     <p>Esta é a minha primeira página HTML usando JavaScript!</p>
 
     <script>
-        var n1 = Number(prompt("Digite um número:")); //`parseInt` converte a string para um número inteiro`
-        var n2 = Number(prompt("Digite outro número:")); //`parseFloat` converte a string para um número de ponto flutuante`
+        var n1 = Number(prompt("Digite um número:")); //`window.prompt` retorna uma `string`; `parseInt` converte a string para um número inteiro`; `parseFloat` converte a string para um número de ponto flutuante`; `Number` é uma função que converte a string para um número, seja inteiro ou de ponto flutuante, dependendo do formato da string`
+        var n2 = Number(prompt("Digite outro número:"));
         var s = n1 + n2;
-        window.alert("A soma dos valores é: " + String(s)); //`String(s)` converte o número `s` para uma string para que possa ser concatenado com a mensagem`
+        window.alert("A soma dos valores é: " + String(s)); //`String(s)` converte o valor de `s` para uma string, que possa ser concatenado com a mensagem`
         //(number + number) = adição
         //(string + string) = concatenação
+        //template string: `A soma dos valores é: ${s}`
     </script>
 </body>
 </html>

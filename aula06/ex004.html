@@ -1,29 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Meu primeiro programa</title>
     <style>
-        body{
-            background-color: rgb(113, 167, 248);
-            color:rgb(255, 255, 255);
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 20px; /* comentário em CSS */
-        }
+      body {
+        background-color: rgb(113, 167, 248);
+        color: rgb(255, 255, 255);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px; /* comentário em CSS */
+      }
 
-        h1{
-            color:yellow;
-        }
+      h1 {
+        color: yellow;
+      }
     </style>
-</head>
-<body>
-    <h1>Olá, mundo!</h1> <!-- comentário em HTML -->
+  </head>
+  <body>
+    <h1>Olá, mundo!</h1>
+    <!-- comentário em HTML -->
     <p>Já me livrei da maldição.</p>
+
     <script>
-        var nome = window.prompt('Qual é o seu nome?')
-        document.write(`Seu nome tem ${nome.length} letras.`)
+      var nome = window.prompt("Qual é o seu nome?");
+      document.write(
+        `Olá, <strong>${nome}</strong>! Seu nome tem ${nome.length} letras!`
+      );
+      document.write(`<br>Seu nome em maiúsculas é ${nome.toUpperCase()}`);
+      document.write(`<br>Seu nome em minúsculas é ${nome.toLowerCase()}`);
     </script>
-</body>
+  </body>
 </html>
+
+<!-- Converter números para moeda, usando o Node.js:
+bsmaciel@REIT134461:~/curso-js/aula06$ node
+Welcome to Node.js v20.12.2.
+Type ".help" for more information.
+> var n1 = 1545.5
+undefined
+> n1
+1545.5
+> n1.toFixed(2)
+'1545.50'
+> n1.toFixed(2).replace('.',',')
+'1545,50'
+> n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+'R$ 1.545,50'
+-->

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meu primeiro programa</title>
+    <style>
+        body{
+            background-color: rgb(113, 167, 248);
+            color:rgb(255, 255, 255);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px; /* comentário em CSS */
+        }
+
+        h1{
+            color:yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1> <!-- comentário em HTML -->
+    <p>Já me livrei da maldição.</p>
+    <script>
+        var n1 = Number(window.prompt('Digite um número: ')) //converção de String para Number
+        var n2 = Number(window.prompt('Digite outro número: '))
+        var soma = n1 + n2
+        window.alert(`A soma dos valores ${n1} e ${n2} é igual a ${soma}`) //converção de Number para String
+        // (number + number) para adição
+        // (string + string) para concatenação
+        // Number.parseInt(n) para inteiros
+        // Number.parseFloat(n) para reais
+        // Number(n) o JavaScript decide
+        // String(n) número para string 
+        // n.string() número para string
+    </script>
+</body>
+</html>

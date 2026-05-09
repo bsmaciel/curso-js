@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            background: rgb(75, 120, 197);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p><strong>PRIMEIRO</strong> parágrafo.</p>
+    <p><strong>SEGUNDO</strong> parágrafo.</p>
+    <div id="a"><strong>PRIMERIA</strong> div</div>
+    <div class="b"><strong>SEGUNDA</strong> div</div>
+    <script>
+        var corpo = window.document.body;
+        corpo.style.background = 'orange';
+        var p = window.document.getElementsByTagName('p')[1];
+        p.style.color = 'blue';
+        window.document.write('Parágrafo selecionado: ' + p.innerHTML);
+        var d1 = window.document.getElementById('a');
+        d1.style.color = 'red';
+        var d2 = window.document.getElementsByClassName('b')[0];
+        d2.style.color = 'green';
+
+    </script>
+</body>
+</html> 

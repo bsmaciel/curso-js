@@ -6,6 +6,7 @@ body {
 
 header {
 	text-align: center;
+	color: yellow;
 }
 section {
 	background-color: white;
@@ -20,4 +21,5 @@ section {
 footer {
 	text-align: center;
 	font-style: italic;
+	color: yellow;
 }

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Exercício 1 - Aula 16</title>
+	</head>
+	<body>
+		<header>
+			<h1>Analisador de Números</h1>
+		</header>
+		<section>
+			<div>
+				<form>
+					<label for="">Número (ente 1 e 100)</label>
+					<input type="number" name="fnum" id="fnum" />
+					<input
+						type="button"
+						value="Adicionar"
+						onclick="adicionar()" />
+					<p>
+						<select name="flist" id="flist" size="6">
+							<option value="V1">Valores</option>
+						</select>
+					</p>
+					<input
+						type="button"
+						value="Finalizar"
+						onclick="finalizar()" />
+				</form>
+			</div>
+			<div>
+				<p id="label">Resultado:</p>
+				<div id="resp"></div>
+			</div>
+		</section>
+		<footer><p>&copy CursoemVideo</p></footer>
+		<script src="script.js"></script>
+	</body>
+</html>

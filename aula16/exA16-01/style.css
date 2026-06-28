@@ -1,0 +1,50 @@
+body {
+	display: block;
+	background-color: cadetblue;
+	font-family: Tahoma, Verdana, sans-serif;
+	font-size: 0.8em;
+}
+header {
+	color: aliceblue;
+}
+div {
+	background-color: aliceblue;
+	width: fit-content;
+	border-radius: 5px;
+	margin-top: 10px;
+	padding: 10px;
+}
+select#flist {
+	width: 200px;
+}
+label {
+	font-weight: 600;
+}
+div p#label {
+	font-weight: 600;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+div#resp {
+	margin-top: 0;
+}
+div#resp p {
+	margin-left: 5px;
+	display: list-item;
+	color: green;
+}
+input[type='button'] {
+	padding: 6px;
+	border: none;
+	border-radius: 2px;
+	font-size: 0.7em;
+	color: aliceblue;
+	background-color: green;
+}
+select {
+	padding: 6px;
+}
+
+footer {
+	color: aliceblue;
+}
